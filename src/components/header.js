@@ -3,14 +3,12 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
-
 const socials = [
 
     {
 
         icon: faEnvelope,
-        url: 'mailto: hello@example.com',
+        url: 'mailto: vishwa.sovis@gmail.com',
 
     },
 
@@ -21,9 +19,9 @@ const socials = [
 
     {
         icon: faLinkedin,
-        url: "www.linkedin.com/in/seran-vishwa-46b4aa212"
+        url: "https://www.linkedin.com/in/seran-vishwa-46b4aa212" 
     }
-]
+];
 
 
 
@@ -42,7 +40,7 @@ const Header = () => {
             backgroundColor="#18181b"
         >
             
-            <Box color="White" maxWidth="1280px" margin="5 auto">
+            <Box color="White" maxWidth="1280px" margin="0 auto">
                 
                 <HStack
                     px={16}
