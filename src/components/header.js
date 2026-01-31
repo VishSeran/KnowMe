@@ -19,15 +19,26 @@ const socials = [
 
     {
         icon: faLinkedin,
-        url: "https://www.linkedin.com/in/seran-vishwa-46b4aa212" 
+        url: "https://www.linkedin.com/in/seran-vishwa-46b4aa212"
     }
 ];
+
+const handleClick = (anchor) => {
+    const id = `${anchor}-section`;
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }
+};
 
 
 
 const Header = () => {
     return (
-        
+
         <Box
             position="fixed"
             top={0}
@@ -39,9 +50,9 @@ const Header = () => {
             transitionTimingFunction="ease-in-out"
             backgroundColor="#18181b"
         >
-            
+
             <Box color="White" maxWidth="1280px" margin="0 auto">
-                
+
                 <HStack
                     px={16}
                     py={4}
@@ -49,12 +60,20 @@ const Header = () => {
                     alignItems="center" >
 
                     <nav>
-                        {socials.map((social, index)=> (
-                            <a href= {social.url} key={index} target="_blank" rel="noopener noreferrer">
+                        {socials.map((social, index) => (
+                            <a href={social.url} key={index} target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={social.icon} size="lg" />
                             </a>
                         ))}
                     </nav>
+
+                    <nav>
+                        <HStack spacing={10}>
+                            <a href="/#projects" onClick={handleClick}>Projects</a>
+                            <a href="/#contact-me" onClick={handleClick}>Contact Me</a>
+                        </HStack>
+                    </nav>
+
 
                 </HStack>
             </Box>
