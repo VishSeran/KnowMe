@@ -49,7 +49,7 @@ const ProjectSection = () => {
 
             <Heading as="h1" id="projects-section" fontSize={30} fontFamily="ui-monospace" letterSpacing="5px">Featured Projects</Heading>
 
-            <Box marginTop={5} display= "grid" gridTemplateColumns= "repeat(2,minmax(0,1fr))"
+            <Box marginTop={5} display= "grid" gridTemplateColumns= "repeat(3,minmax(0,1fr))"
             gridGap={6}>
                 
                     {projects.map((project) => (

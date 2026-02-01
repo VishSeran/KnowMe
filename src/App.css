@@ -56,3 +56,11 @@ a:hover {
   transition-duration: 2s;
   
 }
+.card{
+  transition-duration: 0.2s;
+  transition: transform 0.15s ease-in-out;
+}
+.card:hover {
+
+  transform: scale(1.03);
+}
