@@ -1,7 +1,10 @@
 import { Box, Heading, VStack, Collapsible, Text} from "@chakra-ui/react";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
 const Card = ({ title, description, imgSrc }) => {
+    
 
     const [mouseOn, setMouseOn] = useState(false);
     const [showMore, setShowMore] = useState(false);
@@ -25,15 +28,16 @@ const Card = ({ title, description, imgSrc }) => {
             backgroundColor="white"
             borderRadius={10}
             marginBottom={5}
+            
             >
 
 
-            <VStack padding={8} textSpacingTrim={10} color="black">
-                <img src={imgSrc} alt="project image" width="50%" height= "50%"/>
+            <VStack padding={8} textSpacingTrim={10} color="black" align="start">
+                <img src={imgSrc} alt="project image" borderRadius = "5" width="100%" height= "100%"/>
 
                 <p fontSize="16px" fontFamily="heading" fontWeight="semibold">{title}</p>
 
-                <Text  w="100%" noOfLines={showMore ? undefined : 3}>{description}</Text>
+                <Text  w="100%" lineClamp={showMore ? undefined : 3}>{description}</Text>
                 
                 
                 <button
@@ -41,8 +45,10 @@ const Card = ({ title, description, imgSrc }) => {
                     mt={2}
                     variant="link"
                     onClick={handleShow}
+                    transitionDelay = "0.5s"
+                    transitionTimingFunction = "ease-in-out"
                 >
-                    {showMore ? "Show less" : "Show more"}
+                   <Text fontWeight= "semibold">{showMore ? "Show less" : "Show more"  } <FontAwesomeIcon style={{ verticalAlign: "center" }} icon={faArrowRight} size="lg"/> </Text> 
                 </button>
 
             </VStack>
