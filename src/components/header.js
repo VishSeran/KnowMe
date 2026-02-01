@@ -73,7 +73,7 @@ const Header = () => {
                     <nav>
                         <HStack spaceX={8} align= "end">
                             <a href = "#projects"  onClick={()=> handleClick("projects")} className="buttonHover">Projects</a>
-                            <a href="/#contact-me" onClick={()=> handleClick("contact-me")} className="buttonHover">Contact Me</a>
+                            <a href="#contact-me" onClick={()=> handleClick("contact-me")} className="buttonHover">Contact Me</a>
                         </HStack>
                     </nav>
 

@@ -1,4 +1,5 @@
 import './App.css';
+import ConactMeSection from './components/ConactMeSection.js';
 
 import Header from './components/header.js';
 import { LandingPage } from './components/LandingPage.js';
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <LandingPage />
       <ProjectSection />
+      <ConactMeSection />
     </main>
       
     
