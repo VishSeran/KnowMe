@@ -1,4 +1,4 @@
-import { Box, Heading, Text, VStack, Collapsible } from "@chakra-ui/react";
+import { Box, Heading, VStack, Collapsible, Text} from "@chakra-ui/react";
 import { useState } from "react";
 
 const Card = ({ title, description, imgSrc }) => {
@@ -10,8 +10,10 @@ const Card = ({ title, description, imgSrc }) => {
         setMouseOn(true);
     }
 
+
     const handleShow = () => {
         setShowMore(!showMore);
+    
     }
     return (
         <Box
@@ -23,13 +25,15 @@ const Card = ({ title, description, imgSrc }) => {
             backgroundColor="white"
             borderRadius={10}
             marginBottom={5}
-            maxHeight="">
+            >
 
 
             <VStack padding={8} textSpacingTrim={10} color="black">
-                <img src={imgSrc} alt="project image" width="100px" height="100px" />
+                <img src={imgSrc} alt="project image" width="50%" height= "50%"/>
+
                 <p fontSize="16px" fontFamily="heading" fontWeight="semibold">{title}</p>
-                <Text fontSize= "18px" noOf>{description}</Text>
+
+                <Text  w="100%" noOfLines={showMore ? undefined : 3}>{description}</Text>
                 
                 
                 <button

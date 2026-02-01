@@ -41,27 +41,28 @@ const ProjectSection = () => {
         <FullScreenSection
             p={8}
             isDarkBackground={true}
-            alignItems ="flex-start"
+            alignItems="flex-start"
             backgroundColor="#14532d"
-            spacing = {8}
+            spacing={8}
             h="auto"
-            >
-            
-            <Heading as="h1" id="projects-section" fontSize={30} fontFamily ="ui-monospace" letterSpacing="5px">Featured Projects</Heading>
-            
-            <Box marginTop={5} >
+        >
+
+            <Heading as="h1" id="projects-section" fontSize={30} fontFamily="ui-monospace" letterSpacing="5px">Featured Projects</Heading>
+
+            <Box marginTop={5} display= "grid" gridTemplateColumns= "repeat(2,minmax(0,1fr))"
+            gridGap={6}>
                 
-                 {projects.map((project) => (
-                    <Card key={project.title}
-                        title={project.title}
-                        description={project.description}
-                        imgSrc={project.getImageSrc()} />
-                ))}
+                    {projects.map((project) => (
+                        <Card key={project.title}
+                            title={project.title}
+                            description={project.description}
+                            imgSrc={project.getImageSrc()} />
+                    ))}
             
             </Box>
-            
-               
-        
+
+
+
         </FullScreenSection>
 
 
