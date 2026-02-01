@@ -1,4 +1,15 @@
-import { Box, Heading, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  FormControl,
+  FormErrorMessage,
+  FormLabel,
+  Heading,
+  Input,
+  Select,
+  Textarea,
+  VStack,
+} from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 
 const ConactMeSection = () => {
@@ -16,9 +27,9 @@ const ConactMeSection = () => {
 
                 <Box>
                     <form>
-                        <fieldset>
-                            <label>Name</label>
-                        </fieldset>
+                        <VStack>
+                            <p className="bg-black text-white">Hi</p>
+                        </VStack>
                     </form>
                 </Box>
             </VStack>
