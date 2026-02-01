@@ -42,3 +42,17 @@
   border-radius: 50%;
   width: 200px;
 }
+.buttonHover {
+  
+}
+
+a:hover {
+  
+  font-size: large;
+  font-weight: 700;
+  transition-delay: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-property: transform;
+  transition-duration: 2s;
+  
+}

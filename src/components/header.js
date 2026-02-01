@@ -42,6 +42,7 @@ const Header = () => {
 
         <Box
             position="fixed"
+            height= "55px"
             top={0}
             right={0}
             left={0}
@@ -50,6 +51,7 @@ const Header = () => {
             transitionDuration="0.3s"
             transitionTimingFunction="ease-in-out"
             backgroundColor="#18181b"
+            zIndex= "100"
         >
 
             <Box color="White" maxWidth="1280px" margin="0 auto">
@@ -69,9 +71,9 @@ const Header = () => {
                     </nav>
 
                     <nav>
-                        <HStack spacing={10}>
-                            <a href = "#projects"  onClick={()=> handleClick("projects")}>Projects</a>
-                            <a href="/#contact-me" onClick={()=> handleClick("contact-me")}>Contact Me</a>
+                        <HStack spaceX={8} align= "end">
+                            <a href = "#projects"  onClick={()=> handleClick("projects")} className="buttonHover">Projects</a>
+                            <a href="/#contact-me" onClick={()=> handleClick("contact-me")} className="buttonHover">Contact Me</a>
                         </HStack>
                     </nav>
 
