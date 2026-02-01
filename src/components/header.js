@@ -32,6 +32,7 @@ const handleClick = (anchor) => {
             block: "start"
         });
     }
+    
 };
 
 
@@ -69,8 +70,8 @@ const Header = () => {
 
                     <nav>
                         <HStack spacing={10}>
-                            <a href="/#projects" onClick={handleClick}>Projects</a>
-                            <a href="/#contact-me" onClick={handleClick}>Contact Me</a>
+                            <a href = "#projects"  onClick={()=> handleClick("projects")}>Projects</a>
+                            <a href="/#contact-me" onClick={()=> handleClick("contact-me")}>Contact Me</a>
                         </HStack>
                     </nav>
 

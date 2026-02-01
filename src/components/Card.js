@@ -1,4 +1,4 @@
-import { Box, Text, VStack } from "@chakra-ui/react";
+import { Box, Heading, Text, VStack } from "@chakra-ui/react";
 import { useState } from "react";
 
 const Card = ({ title, description, imgSrc }) => {
@@ -11,16 +11,17 @@ const Card = ({ title, description, imgSrc }) => {
     return (
         <Box
             color="dark"
-            position="fixed"
+            position="relative"
             transitionProperty="transform"
             transitionDelay="0.5s"
             transitionTimingFunction="ease-in-smooth"
             backgroundColor="white" >
-
-            <VStack padding={8} textSpacingTrim={10}>
+            
+            
+            <VStack padding={8} textSpacingTrim={10} color= "black">
                 <img src= {imgSrc} alt="project image" width = "100px" height="100px" />
-                <Text fontSize= "16px" fontFamily= "heading" fontWeight= "semibold">{title}</Text>
-                <Text fontSize= "12px" >{description}</Text>
+                <p fontSize= "16px" fontFamily= "heading" fontWeight= "semibold">{title}</p>
+                <p fontSize= "12px" >{description}</p>
             </VStack>
         </Box>
     )
