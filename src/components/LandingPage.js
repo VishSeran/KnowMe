@@ -21,7 +21,7 @@ export const LandingPage =()=>(
         </VStack>
 
         
-        <VStack alignItems= "center" fontFamily= "heading" fontSize= "60px" fontWeight= "500">
+        <VStack alignItems= "center" fontFamily= "heading" fontSize= "60px" fontWeight= "bold">
             <p>{bio1}</p>
             <p>{bio2}</p>
         </VStack>
