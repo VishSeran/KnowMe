@@ -7,7 +7,7 @@ const projects = [
     {
         title: "React Space",
         description:
-            "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️",
+            "Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️,Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️.Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️,Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️Handy tool belt to create amazing AR components in a React app, with redux integration via middleware️.",
         getImageSrc: () => require("../assets/profile.jpg"),
     },
     {
@@ -43,18 +43,21 @@ const ProjectSection = () => {
             isDarkBackground={true}
             alignItems ="flex-start"
             backgroundColor="#14532d"
-            spacing = {8}>
+            spacing = {8}
+            h="auto"
+            >
             
-            <Heading as="h1" id="projects-section">Featured Projects</Heading>
-            <Box>
-                <HStack>
+            <Heading as="h1" id="projects-section" fontSize={30} fontFamily ="ui-monospace" letterSpacing="5px">Featured Projects</Heading>
+            
+            <Box marginTop={5} >
+                
                  {projects.map((project) => (
                     <Card key={project.title}
                         title={project.title}
                         description={project.description}
                         imgSrc={project.getImageSrc()} />
                 ))}
-            </HStack>
+            
             </Box>
             
                
