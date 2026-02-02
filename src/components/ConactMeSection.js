@@ -11,8 +11,14 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
+import { useState } from "react";
 
 const ConactMeSection = () => {
+
+
+    const[name, setName] = useState('');
+    const[email, setEmail] = useState('');
+    const[message, setMessage] = useState('');
 
 
     return (
@@ -28,7 +34,8 @@ const ConactMeSection = () => {
                 <Box>
                     <form>
                         <VStack>
-                            <p className="bg-black text-white">Hi</p>
+                            <label htmlFor="id">name</label>
+                            <input id="name"/>
                         </VStack>
                     </form>
                 </Box>
