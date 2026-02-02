@@ -12,6 +12,8 @@ import {
 } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import { useState } from "react";
+import { Form } from "react-router-dom";
+
 
 
 
@@ -35,29 +37,36 @@ const ConactMeSection = () => {
 
                 <Box paddingTop={40} >
                     <form>
-                        <VStack alignItems="flex-start" margin={5} >
-                            <Box fontSize={25}>
+                        <VStack alignItems="flex-start" padding={5}>
+                            <Box fontSize={25} paddingBlock={0}>
                                 <label className="contactName" htmlFor="name" >Name</label>
                             </Box>
-                            
-                            <Input id="name" w="1000px" paddingTop={5} value={name} onChange={(e) => setName(e.target.value)} />
-                
-                            
-
-
+                            <Input id="name" type="text" w="1000px" fontSize={25} height="50px" value={name} onChange={(e) => setName(e.target.value)} />
                         </VStack>
 
-                        <VStack alignItems="flex-start" margin={5}>
-                            <label className="contactName" htmlFor="email">Email</label>
-                            <input id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                        <VStack alignItems="flex-start" padding={5}>
+                            <Box fontSize={25} paddingBlock={0}>
+                                <label className="contactName" htmlFor="email" >Email</label>
+                            </Box>
+                            <Input type="text" id="email" w="1000px" fontSize={25} height="50px" value={email} onChange={(e) => setEmail(e.target.value)} />
                         </VStack>
 
-                        <VStack alignItems="flex-start" margin={5}>
-                            <label className="contactName" htmlFor="message">Message</label>
-                            <input id="message" value={message} onChange={(e) => setMessage(e.target.value)} />
+                        <VStack alignItems="flex-start" padding={5}>
+                            <Box fontSize={25} paddingBlock={0}>
+                                <label className="contactName" htmlFor="message" >Message</label>
+                            </Box>
+                            <Input fontSize={25} type="text" id="message" w="1000px" height="100px" value={message} onChange={(e) => setMessage(e.target.value)} />
                         </VStack>
                     </form>
                 </Box>
+
+                <Box>
+                    <button type="submit">Submit</button>
+                </Box>
+
+                
+
+
             </VStack>
 
         </FullScreenSection>
