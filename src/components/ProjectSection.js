@@ -18,7 +18,7 @@ It integrates smart contracts, microservices, and decentralized storage to creat
             `Real-Time Traffic Signal Identification Model – TensorFlow, Python, Keras, OpenCV
 Developed a Convolutional Neural Network (CNN) to accurately classify traffic signals into multiple categories in real time. Applied advanced image preprocessing techniques, including grayscale conversion, Gaussian blurring, and edge detection, 
 to enhance features and improve model training efficiency and prediction accuracy.`,
-        getImageSrc: () => require("../assets/trafic.jpg"),
+        getImageSrc: () => require("../assets/trafic.png"),
         getUrl: "https://github.com/VishSeran/Traffic-Signal-Identifier.git"
     },
     {
@@ -33,7 +33,7 @@ to enhance features and improve model training efficiency and prediction accurac
             The system reduces manual paperwork, improves operational transparency, and centralizes vehicle 
             data to optimize vehicle utilization and enhance overall resource management.`,
 
-        getImageSrc: () => require("../assets/DeedLink.png"),
+        getImageSrc: () => require("../assets/slsi.PNG"),
         getUrl: "https://github.com/VishSeran/SLSI-Vehicle-Reservation.git"
     },
     {
@@ -44,7 +44,7 @@ to enhance features and improve model training efficiency and prediction accurac
              parameters. The dataset includes variables such as ambient temperature, atmospheric 
              pressure, relative humidity, and exhaust vacuum. The goal is to build and evaluate 
              models that accurately forecast the plant’s power output using real-world sensor data.`,
-        getImageSrc: () => require("../assets/DeedLink.png"),
+        getImageSrc: () => require("../assets/energy-ai-management-tools.jpeg"),
         getUrl: "https://github.com/VishSeran/ANN-Regression-model-to-predict-the-electrical-energy-output-of-a-Combined-Cycle-Power-Plant.git"
     },
     {
@@ -53,18 +53,20 @@ to enhance features and improve model training efficiency and prediction accurac
             `This project implements a Convolutional Neural Network (CNN) using TensorFlow and Keras to classify images of fruits into multiple categories. The model is trained on a labeled dataset of fruit images and demonstrates the full pipeline from data loading and preprocessing to training, evaluation, and visualization.
 
             `,
-        getImageSrc: () => require("../assets/DeedLink.png"),
+        getImageSrc: () => require("../assets/fruits.png"),
         getUrl: "https://github.com/VishSeran/CNN-Fruit-Classification-Model.git"
     },
 
       {
         title: "E-Commerce Furniture App",
         description:
-            `This is a project of build of the e-commerce application for android devices. Using flutter and firebase
-             as the database and the interfaces of this app looks very professionals gives the user friendly interface 
+            `
+            This is a project of build of the e-commerce application for android devices. Using flutter and firebase
+             as the database and the interfaces of this app looks very professionals 
+             gives the user friendly interface 
              for user to engage freely.
             `,
-        getImageSrc: () => require("../assets/DeedLink.png"),
+        getImageSrc: () => require("../assets/furniture.jpg"),
         getUrl: "https://github.com/VishSeran/E-Commerce-Furniture-App.git"
     },
 
@@ -78,7 +80,7 @@ to enhance features and improve model training efficiency and prediction accurac
             The project demonstrates practical application of supervised learning techniques to solve real-world regression problems and showcases strong 
             skills in data analysis, model optimization, and predictive modeling.
             `,
-        getImageSrc: () => require("../assets/DeedLink.png"),
+        getImageSrc: () => require("../assets/salary.png"),
         getUrl: "https://github.com/VishSeran/Salary-Prediction-Model.git"
     },
      {
@@ -94,7 +96,7 @@ to enhance features and improve model training efficiency and prediction accurac
                performance, and is currently being further optimized to enhance reliability, scalability, 
                and overall system quality.
             `,
-        getImageSrc: () => require("../assets/DeedLink.png"),
+        getImageSrc: () => require("../assets/vehicle management web project.PNG"),
         getUrl: "https://github.com/VishSeran/Vehicle-Management-System.git"
     },
 ];

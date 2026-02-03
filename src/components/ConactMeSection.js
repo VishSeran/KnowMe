@@ -34,7 +34,7 @@ const ContactMeSection = () => {
                 </div>
 
                 <div className="form-element">
-                    <input type="text" id="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <input type="email" id="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
                     <label> Email</label>
                 </div>
 

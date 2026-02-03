@@ -32,7 +32,7 @@ const Card = ({ title, description, imgSrc, url }) => {
         >
             <VStack padding={0} textSpacingTrim={10} color="black" align="start">
                 <Box >
-                    <Image src= {imgSrc} fit= "cover" width="400px" height="250px" alt="project image" borderRadius= {15}/>
+                    <Image src= {imgSrc} width="500px" height="250px" alt="project image" borderRadius= {15}/>
 
                 </Box>
 
