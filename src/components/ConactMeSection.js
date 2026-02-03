@@ -1,75 +1,59 @@
-import {
-    Box,
-    Button,
-    FormControl,
-    FormErrorMessage,
-    FormLabel,
-    Heading,
-    Input,
-    Select,
-    Textarea,
-    VStack
-} from "@chakra-ui/react";
-import FullScreenSection from "./FullScreenSection";
 import { useState } from "react";
-import { Form } from "react-router-dom";
+import "./ContactMeSection.css";
 
+const ContactMeSection = () => {
 
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [enquiry, setEnquiry] = useState("");
+    const [message, setMessage] = useState("");
 
-
-const ConactMeSection = () => {
-
-
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-
+    const enquiryOptions = [
+        'Freelance project proposal',
+        'Offer job position',
+        'Review',
+        'Other'
+    ];
 
     return (
-        <FullScreenSection
-            isDarkBackground
-            backgroundColor="#391350">
+        <div className="contact-box" id="contact-me-section">
+            <div>
+                <h1> Contact Me</h1>
+            </div>
 
-            <VStack w="1024px" paddingTop="20" alignItems="flex-start">
-                <Heading as="h1" id="contact-me-section" fontSize="40px">
-                    Contact Me
-                </Heading>
+            <form className="form">
+                <div className="form-element">
+                    <input type="text" id="name" required  value={name} onChange={(e) => setName(e.target.value)}/>
+                    <label> Name</label>
+                </div>
 
-                <Box paddingTop={40} >
-                    <form>
-                        <VStack alignItems="flex-start" padding={5}>
-                            <Box fontSize={25} paddingBlock={0}>
-                                <label className="contactName" htmlFor="name" >Name</label>
-                            </Box>
-                            <Input id="name" type="text" w="1000px" fontSize={25} height="50px" value={name} onChange={(e) => setName(e.target.value)} />
-                        </VStack>
+                <div className="form-element">
+                    <input type="text" id="email" required  value={email} onChange={(e) => setEmail(e.target.value)}/>
+                    <label> Email</label>
+                </div>
 
-                        <VStack alignItems="flex-start" padding={5}>
-                            <Box fontSize={25} paddingBlock={0}>
-                                <label className="contactName" htmlFor="email" >Email</label>
-                            </Box>
-                            <Input type="text" id="email" w="1000px" fontSize={25} height="50px" value={email} onChange={(e) => setEmail(e.target.value)} />
-                        </VStack>
+                <div className="form-element">
+                    <select  required value={enquiry} onChange={(e) =>setEnquiry(e.target.value) }>
+                        <option value="" disabled>Select enquiry</option>
+                        <option value="Freelance project proposal" >Freelance project proposal</option>
+                        <option value="Offer job position" >Offer job position</option>
+                        <option value="Review" >Review</option>
+                        <option value="Other" >Other</option>
 
-                        <VStack alignItems="flex-start" padding={5}>
-                            <Box fontSize={25} paddingBlock={0}>
-                                <label className="contactName" htmlFor="message" >Message</label>
-                            </Box>
-                            <Input fontSize={25} type="text" id="message" w="1000px" height="100px" value={message} onChange={(e) => setMessage(e.target.value)} />
-                        </VStack>
-                    </form>
-                </Box>
-
-                <Box>
-                    <button type="submit">Submit</button>
-                </Box>
-
-                
+                    </select>
+                    <label className="select label"> Type of Enquiry</label>
+                </div>
 
 
-            </VStack>
 
-        </FullScreenSection>
+               
+            </form>
+
+
+        </div>
+
+
     )
 }
-export default ConactMeSection;
+
+export default ContactMeSection;

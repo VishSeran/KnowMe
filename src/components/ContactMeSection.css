@@ -1,0 +1,98 @@
+.contact-box {
+    background-color: #200F62;
+    height: max-content;
+}
+
+.contact-box h1 {
+    padding: 40px;
+    font-size: 40px;
+    color: aliceblue;
+    font-family: ui-monospace;
+    letter-spacing: 4px;
+    font-weight: 600;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.form .form-element {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 60px;
+
+}
+
+.form-element input {
+    width: 900px;
+    height: 40px;
+    color: black;
+    border-radius: 10px;
+    border-color: cornflowerblue;
+    background-color: #f8f8f8;
+    padding: 10px;
+
+}
+
+.form-element input:focus {
+    background-color: #e0e0e0;
+}
+
+.form-element label {
+    position: absolute;
+    color: black;
+    font-size: 23px;
+    top: 20%;
+    left: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.3s ease;
+    padding: 0 10px;
+}
+
+.form-element input:focus+label,
+.form-element input:valid+label {
+    top: -26px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.form-element select {
+    background-color: #f8f8f8;
+    color: black;
+    height: 40px;
+    width: 900px;
+    border-radius: 10px;
+    border-color: cornflowerblue;
+    padding: 10px;
+    margin-bottom: 200px; 
+}
+
+.form-element .select label{
+    position: absolute;
+    color: black;
+    font-size: 23px;
+    top: 20%;
+    left: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.3s ease;
+    padding: 0 10px;
+}
+
+.form-element select option {
+    color: black;
+}
+
+.form-element select:focus+label,
+.form-element select:valid +label {
+    top: -26px;
+    font-size: 20px;
+    color: aliceblue;
+}
