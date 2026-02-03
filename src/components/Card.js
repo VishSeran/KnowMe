@@ -1,19 +1,15 @@
-import { Box, Heading, VStack, Collapsible, Text, HStack, Button, Link } from "@chakra-ui/react";
+import { Box, VStack, Text, HStack, Link } from "@chakra-ui/react";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { Image } from "@chakra-ui/react"
-import FullScreenSection from "./FullScreenSection";
+
 
 const Card = ({ title, description, imgSrc, url }) => {
 
-    const [mouseOn, setMouseOn] = useState(false);
     const [showMore, setShowMore] = useState(false);
 
-    const handleClick = () => {
-        setMouseOn(true);
-    }
+   
     const handleShow = () => {
         setShowMore(!showMore);
     }

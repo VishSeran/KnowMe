@@ -1,4 +1,4 @@
-import { Box, Heading, HStack } from "@chakra-ui/react";
+import { Box, Heading} from "@chakra-ui/react";
 import Card from "./Card";
 import FullScreenSection from "./FullScreenSection";
 

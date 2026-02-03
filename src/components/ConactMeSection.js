@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./ContactMeSection.css";
-import { Alert } from "@chakra-ui/react";
+
 
 const ContactMeSection = () => {
 
@@ -9,12 +9,7 @@ const ContactMeSection = () => {
     const [enquiry, setEnquiry] = useState("");
     const [message, setMessage] = useState("");
 
-    const enquiryOptions = [
-        'Freelance project proposal',
-        'Offer job position',
-        'Review',
-        'Other'
-    ];
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
