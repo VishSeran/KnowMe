@@ -1,6 +1,7 @@
 .contact-box {
     background-color: #200F62;
     height: max-content;
+    min-width: 1280px;
 }
 
 .contact-box h1 {
@@ -66,24 +67,26 @@
 .form-element select {
     background-color: #f8f8f8;
     color: black;
-    height: 40px;
+    height: 50px;
     width: 900px;
     border-radius: 10px;
     border-color: cornflowerblue;
     padding: 10px;
-    margin-bottom: 200px; 
+    margin-bottom: 50px;
+    
 }
 
-.form-element .select label{
+.form-element .select-label {
     position: absolute;
-    color: black;
-    font-size: 23px;
-    top: 20%;
+    color: white;
+    font-size: 20px;
+    top: 40%;
     left: 10px;
     transform: translateY(-50%);
     pointer-events: none;
     transition: 0.3s ease;
     padding: 0 10px;
+
 }
 
 .form-element select option {
@@ -91,8 +94,48 @@
 }
 
 .form-element select:focus+label,
-.form-element select:valid +label {
+.form-element select:valid+label {
     top: -26px;
     font-size: 20px;
     color: aliceblue;
 }
+
+.form-element textarea {
+
+    width: 900px;
+    height: 300px;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+    border-color: cornflowerblue;
+    background-color: #f8f8f8;
+
+}
+
+.form-element .text-label{
+    top:10%;
+}
+
+.form-element textarea:focus + label, .form-element textarea:valid+label{
+    top: -26px;
+    font-size: 20px;
+    color: aliceblue;
+
+}
+
+.form button{
+    margin: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    width: 300px;
+    background-color: #31b936;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.form button:hover {
+    background-color: #46e44b;
+    scale: 1.05;
+    transition: 0.1s ease;
+}
+
