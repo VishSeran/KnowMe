@@ -1,4 +1,4 @@
-import { Box, Heading, VStack, Collapsible, Text, HStack } from "@chakra-ui/react";
+import { Box, Heading, VStack, Collapsible, Text, HStack, Button, Link } from "@chakra-ui/react";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Image } from "@chakra-ui/react"
 import FullScreenSection from "./FullScreenSection";
 
-const Card = ({ title, description, imgSrc }) => {
+const Card = ({ title, description, imgSrc, url }) => {
 
     const [mouseOn, setMouseOn] = useState(false);
     const [showMore, setShowMore] = useState(false);
@@ -55,7 +55,8 @@ const Card = ({ title, description, imgSrc }) => {
                             )
                         }
 
-                        <button>Github Repo</button>
+                        <Link href={url} backgroundColor="#5670B0" padding={2} borderRadius={10} color="white" _hover={{bg:"#6c8cdc"}}>GitHub</Link>
+        
                     </HStack>
                 </VStack>
             </VStack>

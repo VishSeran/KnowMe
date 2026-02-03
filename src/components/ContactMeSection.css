@@ -6,6 +6,7 @@
 
 .contact-box h1 {
     padding: 40px;
+    padding-top: 60px;
     font-size: 40px;
     color: aliceblue;
     font-family: ui-monospace;
@@ -32,7 +33,7 @@
 
 .form-element input {
     width: 900px;
-    height: 40px;
+    height: 50px;
     color: black;
     border-radius: 10px;
     border-color: cornflowerblue;
